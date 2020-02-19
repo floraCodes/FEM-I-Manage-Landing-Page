@@ -19,19 +19,25 @@ body {
   align-items: center;
   justify-content: center;
   color: var(--Dark-Blue);
+  overflow-x: hidden;
 }
-
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 /*********************************Navbar*************************************/
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 70vw;
   height: 2em;
+  width: 70vw;
   line-height: 2em;
-  padding: 1em;
+  padding: 1em 0;
   margin: 1em 0;
+  /* border: 1px solid black; */
 }
 .nav-links a {
   margin: 15px;
@@ -67,9 +73,11 @@ nav .logo {
 .hero {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 70vw;
   margin: 1em 0;
   height: 90vh;
+  width: 70vw;
+
+  /* border: 1px solid black; */
 }
 .hero-wrapper {
   display: flex;
@@ -99,9 +107,10 @@ nav .logo {
   display: grid;
   align-items: start;
   grid-template-columns: repeat(2, 1fr);
-  width: 70vw;
   height: 90vh;
+  width: 70vw;
   /* border: 1px solid black; */
+  margin-top: 2em;
 }
 .about-us-wrapper h2 {
   font-size: 40px;
@@ -152,24 +161,68 @@ nav .logo {
 .about-us-card p {
   grid-column: 2/3;
   grid-row: 2/3;
-  margin: 0;
-  margin: 1.5em 0;
+  margin: 0.5em 0 2.5em 0;
   color: var(--Dark-Grayish-Blue);
+  text-align: justify;
   /* border: 1px solid black; */
 }
 
 /*********************************Testimonials*************************************/
 
 .testimonials {
-  border: 1px solid black;
-  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid black; */
+  width: 98vw;
+  margin-bottom: 3em;
 }
-/* Footer */
-.banner-get-started {
-  border: 1px solid black;
-  /* width: 100vw; */
+.testimonials h2 {
+  font-size: 40px;
+  /* border: 1px solid black; */
 }
+.testimonial-cards {
+  display: flex;
+  /* border: 1px solid black; */
+}
+.testimonial-card {
+  text-align: center;
+  margin: 1em;
+  /* border: 1px solid black; */
+}
+.testimonial-card div {
+  /* border: 1px solid black; */
+  background-color: var(--Vary-Light-Gray);
+  padding: 4em 0.5em 2em 0.5em;
+}
+.testimonial-card img {
+  position: relative;
+  margin-bottom: -60px;
+  width: 100px;
+}
+.testimonials button {
+  margin: 3em;
+  /* border: 1px solid black; */
+}
+
+/*********************************Footer*************************************/
+
 footer {
   display: flex;
   flex-direction: column;
+}
+.bottom-banner {
+  text-align: center;
+  width: 100vw;
+  padding: 2em 0;
+  border: 1px solid black;
+}
+.bottom-banner h2 {
+  border: 1px solid black;
+}
+.footer-wrapper {
+  text-align: center;
+  width: 100vw;
+  padding-top: 1.5em;
+  border: 1px solid black;
 }
