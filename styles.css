@@ -307,14 +307,13 @@ footer {
   padding-bottom: 0.5em;
   font-size: 14px;
 }
-.footer-wrapper .suscribe-footer {
+.footer-wrapper .subscribe-footer {
   justify-self: end;
 }
-.footer-wrapper .suscribe-footer input {
+.footer-wrapper .subscribe-footer input {
   margin: 0 0.5em 0 0;
   border: none;
   border-radius: 1.5em;
-  color: rgba(255, 255, 255, 0.932);
   font-weight: 700;
   font-family: "Be Vietnam", sans-serif;
   text-align: center;
@@ -322,7 +321,7 @@ footer {
   height: 3em;
   line-height: 2em;
 }
-.footer-wrapper .suscribe-footer button {
+.footer-wrapper .subscribe-footer button {
   background-color: var(--Bright-Red);
   margin: 0;
   border: none;
@@ -335,6 +334,13 @@ footer {
   height: 3em;
   line-height: 2em;
 }
-.suscribe-footer button:hover {
+.subscribe-footer button:hover {
   background-color: hsl(12, 70%, 80%);
+}
+.error-message {
+  background-color: var(--Bright-Red);
+  width: auto;
+  border-radius: 10px;
+  padding: 5px;
+  visibility: hidden;
 }

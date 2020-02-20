@@ -154,13 +154,13 @@
     </main>
     <footer>
       <div class="bottom-banner">
-        <div class="bottom-banner-wrapper">
+        <form class="bottom-banner-wrapper">
           <h2>
             Simplify how your team<br />
             works today.
           </h2>
           <button class="get-started-button">Get Started</button>
-        </div>
+        </form>
       </div>
 
       <div class="footer">
@@ -194,10 +194,18 @@
             <a href="#">Community </a>
             <a href="#">Privacy Policy</a>
           </div>
-          <div class="suscribe-footer">
-            <form action="submit">
-              <input type="email" />
+          <div class="subscribe-footer">
+            <form class="subscribe-form" action="submit">
+              <label for="email-input"></label>
+              <input
+                id="email-input"
+                class="email-input"
+                placeholder="name@domain.com"
+                type="text"
+              />
               <button type="submit">Go</button>
+              <p class="error-message"></p>
+              </p>
             </form>
           </div>
           <div class="copyright">Copyright 2020. All Rights Reserved</div>
@@ -210,5 +218,6 @@
         </div>
       </div>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
